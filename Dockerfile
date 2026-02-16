@@ -16,7 +16,9 @@ RUN bun install --frozen-lockfile
 COPY . .
 
 # Generate Prisma client
-RUN bun run prisma:generate
+RUN prisma generate
+
+RUN prisma db push
 
 # Build the application
 RUN bun run build
