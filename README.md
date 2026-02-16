@@ -2,7 +2,7 @@
 
 Moderni reseptienjakosovellus, joka on rakennettu **SvelteKitillä** ja sisältää käyttäjäautentikoinnin, reseptien hallinnan, arvostelut, kommentit ja hakutoiminnallisuuden.
 
-## ✨ Ominaisuudet
+##  Ominaisuudet
 
 * **Käyttäjäautentikointi** – Rekisteröidy, kirjaudu sisään ja ulos turvallisilla sessioilla
 * **Reseptien hallinta** – Luo, lue, muokkaa ja poista reseptejä
@@ -12,13 +12,13 @@ Moderni reseptienjakosovellus, joka on rakennettu **SvelteKitillä** ja sisält�
 * **Responsiivinen ulkoasu** – Tyylikäs käyttöliittymä, joka toimii kaikilla laitteilla
 * **Moderni UI** – Selkeä käyttöliittymä oranssilla teemalla
 
-## 🛠️ Esivaatimukset
+##  Esivaatimukset
 
 * Node.js 20.19+ tai 22.12+
 * Bun (suositeltu) tai npm
 * MongoDB Atlas -tili
 
-## 💻 Asennus
+##  Asennus
 
 ### 1. Asenna Node.js (Docker-esimerkki)
 
@@ -81,7 +81,7 @@ bun run dev
 
 ---
 
-## ⚙️ Kehitys
+##  Kehitys
 
 ### Saatavilla olevat komennot
 
@@ -128,7 +128,7 @@ Resepti-app/
 
 ---
 
-## 🗄️ Tietokantakaavio
+##  Tietokantakaavio
 
 ### User
 
@@ -169,7 +169,7 @@ Resepti-app/
 
 ---
 
-## 🏗️ Teknologiapino
+##  Teknologiapino
 
 * **Framework**: [SvelteKit](https://kit.svelte.dev/) 2.50
 * **UI-kirjasto**: [Svelte](https://svelte.dev/) 5.51
@@ -182,7 +182,7 @@ Resepti-app/
 
 ---
 
-## 🚢 Julkaisu
+##  Julkaisu
 
 ```bash
 bun run build
