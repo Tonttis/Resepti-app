@@ -32,7 +32,8 @@ COPY --from=builder /app/package.json ./
 COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
 
 # Install only production dependencies
-RUN npm ci --omit=dev --ignore-scripts
+# Copy node_modules from builder
+COPY --from=builder /app/node_modules ./node_modules
 
 # Expose the port
 EXPOSE 3000
