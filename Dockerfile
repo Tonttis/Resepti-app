@@ -26,7 +26,7 @@ COPY . .
 # Generate Prisma client (works with Bun)
 RUN bunx --bun prisma generate
 
-# SKIP prisma:push - do migrations at runtime/deploy, not build
+# Database push happens at runtime in CMD (see bottom of file)
 
 # Build the application
 RUN bun run build
@@ -59,4 +59,4 @@ ENV PORT=3000
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
   CMD node -e "require('http').get('http://localhost:3000/health', (r) => process.exit(r.statusCode===200?0:1))"
 
-CMD ["node", "build"]
+CMD sh -c "npx prisma db push --accept-data-loss && node build"
