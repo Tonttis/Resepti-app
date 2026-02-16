@@ -1,7 +1,3 @@
-Tässä on korjattu ja hieman siistitty GitHub README-versio, jossa otsikot, koodiblokit ja rakenne on yhtenäistetty. Olen poistanut ylimääräiset duplikaatit ja varmistanut, että Markdown on selkeästi luettavaa:
-
----
-
 # 🍳 RecipeHub
 
 Moderni reseptienjakosovellus, joka on rakennettu **SvelteKitillä** ja sisältää käyttäjäautentikoinnin, reseptien hallinnan, arvostelut, kommentit ja hakutoiminnallisuuden.
