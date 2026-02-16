@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+.env
+.env.local
+.env.production
+.svelte-kit/
+build/
+dist/
+.cache/
+*.log
+prisma-svelte/migrations/
